@@ -1,10 +1,10 @@
 # Basic example showing distributed tracing across ruby apps
-This is an example app where two sinatra (ruby) services collaborate on an http request. Notably, timing of these requests are recorded into [Zipkin](http://zipkin.io/), a distributed tracing system. This allows you to see the how long the whole operation took, as well how much time was spent in each service.
+This is an example app where two sinatra (ruby) services collaborate on an http request. Notably, timing of these requests are recorded into [Zipkin](https://zipkin.io/), a distributed tracing system. This allows you to see the how long the whole operation took, as well how much time was spent in each service.
 
 Here's an example of what it looks like
-<img width="972" alt="zipkin screen shot" src="https://cloud.githubusercontent.com/assets/64215/19347100/bf76a270-9179-11e6-80bb-bd6ccfe7f7f4.png">
+<img width="972" alt="zipkin screen shot" src="https://user-images.githubusercontent.com/64215/101130524-93c58600-363e-11eb-996f-e72885a669aa.png">
 
-This example was ported from similar examples, such as [Spring Boot](https://github.com/openzipkin/sleuth-webmvc-example).
+This example was ported from similar examples, such as [Brave](https://github.com/openzipkin/brave-example).
 
 # Implementation Overview
 
@@ -34,7 +34,7 @@ $ ruby frontend.rb
 $ ruby backend.rb
 ```
 
-Next, run [Zipkin](http://zipkin.io/), which stores and queries traces reported by and above services.
+Next, run [Zipkin](https://zipkin.io/), which stores and queries traces reported by and above services.
 
 ```bash
 $ java -jar zipkin.jar
